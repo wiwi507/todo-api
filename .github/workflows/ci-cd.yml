@@ -74,6 +74,7 @@ jobs:
           server_port: 587
           username: ${{ secrets.MAIL_USER }}
           password: ${{ secrets.MAIL_PASS }}
+          from: ${{ secrets.MAIL_USER }}
           to: ${{ secrets.MAIL_USER }}
           subject: "[CI/CD] Pipeline ${{ job.status }} - ${{ github.repository }}"
           body: "Estado: ${{ job.status }} | Commit: ${{ github.sha }}"
