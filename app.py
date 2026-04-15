@@ -267,7 +267,6 @@ def delete_task(task_id):
         abort(404)
     tasks.remove(task)
     return jsonify({"result": "Task deleted"})
-#prueba para la notificacion
 
 
 if __name__ == "__main__":
